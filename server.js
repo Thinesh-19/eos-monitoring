@@ -190,7 +190,8 @@ app.put('/api/properties/:propertyId/buildings/:buildingId/floors/:floorId/units
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`✅ Proxy server running at http://localhost:${PORT}`);
+  console.log(`Server listening on port ${PORT}`);
 });
+
 
 
