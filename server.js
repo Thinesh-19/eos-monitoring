@@ -185,6 +185,31 @@ app.put('/api/properties/:propertyId/buildings/:buildingId/floors/:floorId/units
   }
 });
 
+app.get('/api/energy', async (req, res) => {
+  const { propertyId, from, to } = req.query;
+
+  if (!propertyId || !from || !to) {
+    return res.status(400).json({ error: 'Missing required query parameters' });
+  }
+
+  try {
+    const url = `https://api.interel.io/v3.0/properties/${propertyId}/data/insights?startDate=${from}&endDate=${to}`;
+
+    const response = await axios.get(url, {
+      headers: {
+        'accept': 'application/json',
+        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
+      }
+    });
+
+    res.json(response.data);
+  } catch (err) {
+    console.error('❌ Error fetching energy savings:', err.response?.data || err.message);
+    res.status(500).json({ error: 'Failed to fetch energy savings' });
+  }
+});
+
 
 
 
@@ -192,6 +217,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
-
 
 
