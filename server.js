@@ -12,7 +12,7 @@ app.get('/api/properties', async (req, res) => {
     const response = await axios.get('https://api.interel.io/v3.0/properties/?size=100', {
       headers: {
         'accept': 'application/json',
-        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'authorization': 'InterelApiKey 12a6f04be1d955d55a731f66a2f46e136600fd66bbe6672f8521609290ce1767593161589.45c31d861b8869747b9200044003f43eeb712ffb1f3f6aca866ae3d3812ae67ef745bb6d607ad5cb06371495edab759fc6fb5e71aa0931733bde30a59f6d28f8',
         'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
       }
     });
@@ -43,7 +43,7 @@ app.get('/api/history', async (req, res) => {
     const response = await axios.get(url, {
       headers: {
         'accept': 'application/json',
-        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'authorization': 'InterelApiKey 12a6f04be1d955d55a731f66a2f46e136600fd66bbe6672f8521609290ce1767593161589.45c31d861b8869747b9200044003f43eeb712ffb1f3f6aca866ae3d3812ae67ef745bb6d607ad5cb06371495edab759fc6fb5e71aa0931733bde30a59f6d28f8',
         'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
       }
     });
@@ -68,7 +68,7 @@ app.get('/api/live', async (req, res) => {
     const response = await axios.get(url, {
       headers: {
         'accept': 'application/json',
-        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'authorization': 'InterelApiKey 12a6f04be1d955d55a731f66a2f46e136600fd66bbe6672f8521609290ce1767593161589.45c31d861b8869747b9200044003f43eeb712ffb1f3f6aca866ae3d3812ae67ef745bb6d607ad5cb06371495edab759fc6fb5e71aa0931733bde30a59f6d28f8',
         'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
       }
     });
@@ -93,7 +93,7 @@ app.get('/api/prop', async (req, res) => {
     const response = await axios.get(url, {
       headers: {
         'accept': 'application/json',
-        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'authorization': 'InterelApiKey 12a6f04be1d955d55a731f66a2f46e136600fd66bbe6672f8521609290ce1767593161589.45c31d861b8869747b9200044003f43eeb712ffb1f3f6aca866ae3d3812ae67ef745bb6d607ad5cb06371495edab759fc6fb5e71aa0931733bde30a59f6d28f8',
         'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
       }
     });
@@ -121,7 +121,7 @@ console.log(url);
     const response = await axios.get(url, {
       headers: {
         'accept': 'application/json',
-        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'authorization': 'InterelApiKey 12a6f04be1d955d55a731f66a2f46e136600fd66bbe6672f8521609290ce1767593161589.45c31d861b8869747b9200044003f43eeb712ffb1f3f6aca866ae3d3812ae67ef745bb6d607ad5cb06371495edab759fc6fb5e71aa0931733bde30a59f6d28f8',
         'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
       }
     });
@@ -171,7 +171,7 @@ app.put('/api/properties/:propertyId/buildings/:buildingId/floors/:floorId/units
     const response = await axios.put(url, req.body, {
       headers: {
         'accept': 'application/json',
-        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'authorization': 'InterelApiKey 12a6f04be1d955d55a731f66a2f46e136600fd66bbe6672f8521609290ce1767593161589.45c31d861b8869747b9200044003f43eeb712ffb1f3f6aca866ae3d3812ae67ef745bb6d607ad5cb06371495edab759fc6fb5e71aa0931733bde30a59f6d28f8',
         'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
       }
     });
@@ -198,7 +198,7 @@ app.get('/api/energy', async (req, res) => {
     const response = await axios.get(url, {
       headers: {
         'accept': 'application/json',
-        'authorization': 'InterelApiKey 7d00f738e69b3932ef7a95f08034f56a0b35d28d073c302d78fb5df65a7f1748269378588.1a839e28488e7de0670e2f3c93a2efcc06623155fb0a06e4f43ab8a647027194829fef24c08622b76f68386416fc74ce7924e5465c66f91c5c9cf0e28b589656',
+        'authorization': 'InterelApiKey 12a6f04be1d955d55a731f66a2f46e136600fd66bbe6672f8521609290ce1767593161589.45c31d861b8869747b9200044003f43eeb712ffb1f3f6aca866ae3d3812ae67ef745bb6d607ad5cb06371495edab759fc6fb5e71aa0931733bde30a59f6d28f8',
         'x-organisation-id': 'd4980116-25a2-4b6c-b866-e47f7026e4de'
       }
     });
@@ -217,5 +217,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
 
 
